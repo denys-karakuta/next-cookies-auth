@@ -18,7 +18,9 @@
     "nodemailer": "^6.9.6",
     "react": "^18",
     "react-dom": "^18",
-    "react-hot-toast": "^2.4.1"
+    "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.4.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.5",
