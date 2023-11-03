@@ -6,20 +6,7 @@ button:disabled {
     cursor: not-allowed;
 }
 
-.label:after {
+.required-label:after {
     content: " *";
     color: red
-}
-
-.input-password {
-    position: relative;
-}
-
-.password-visibility {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    z-index: 99
 }
