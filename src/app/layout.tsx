@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 
-import '../styles/globals.css';
+import '../assets/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
