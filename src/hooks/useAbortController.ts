@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useRef } from 'react';
 
 const useAbortController = () => {
-    const lastAbortControllerRef = useRef<AbortController | null>(null);
+    const abortControllerRef = useRef<AbortController | null>(null);
 
-    useEffect(() => () => lastAbortControllerRef.current?.abort(), []);
+    useEffect(() => () => abortControllerRef.current?.abort(), []);
 
     const getAbortControllerSignal = useCallback((): AbortSignal => {
-        lastAbortControllerRef.current?.abort();
+        abortControllerRef.current?.abort();
 
         const newController = new AbortController();
-        lastAbortControllerRef.current = newController;
+
+        abortControllerRef.current = newController;
 
         return newController.signal;
     }, []);
