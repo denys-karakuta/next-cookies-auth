@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { ROUTES } from '@/constants/routes';
+
 import Button from '@/components/ui/Button';
 
 const HomePage = () => {
@@ -10,12 +12,16 @@ const HomePage = () => {
             </h2>
 
             <div className="mt-4 flex flex-col items-center justify-center space-y-2 md:flex-row md:space-y-0 md:space-x-3">
-                <Link href="/signin">
+                <Link href={ROUTES.SIGNIN}>
                     <Button text="Sign in" />
                 </Link>
 
-                <Link href="/signup">
+                <Link href={ROUTES.SIGNUP}>
                     <Button text="Sign up" />
+                </Link>
+
+                <Link href={ROUTES.PROFILE}>
+                    <Button text="Profile" />
                 </Link>
             </div>
         </main>
