@@ -1,0 +1,7 @@
+.visibility {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10
+}
