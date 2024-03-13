@@ -14,7 +14,6 @@ import GoogleIcon from '@/components/icons/GoogleIcon';
 import Input from '@/components/ui/Inputs/Input';
 import Checkbox from '@/components/ui/Checkbox';
 import Button from '@/components/ui/Button';
-import Loader from '@/components/ui/Loader';
 
 const SignInPage = () => {
     const { submitSigninUser } = useUserActions();
@@ -84,8 +83,6 @@ const SignInPage = () => {
                     </Button>
                 </div>
             </div>
-
-            {/* <Loader /> */}
         </>
     );
 };
